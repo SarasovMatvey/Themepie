@@ -74,8 +74,8 @@ function html() {
 function styles() {
   return src(paths.styles)
     .pipe(gulpif(config.isDevelopment, sourcemaps.init()))
-    .pipe(sass())
     .pipe(concat(names.outputCssFile))
+    .pipe(sass())
     .pipe(
       cleanCss({
         level: 2,
@@ -150,6 +150,7 @@ function watcher(done) {
   watch([paths.js], series(scripts, doc));
   watch([paths.styles], styles);
   watch([paths.html], series(html));
+  watch([paths.img], series(images));
 
   done();
 }

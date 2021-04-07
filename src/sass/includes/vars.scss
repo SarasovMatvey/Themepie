@@ -1,4 +1,6 @@
 :root {
+  // colors 
+  
   $c-accent: #2888e2;
   $c-accent-dark: #1565af;
   $c-accent-red: #f5617d;
@@ -36,4 +38,9 @@
   @include colorVar('--c-light-gray', $c-light-gray);
   @include colorVar('--c-light-accent', $c-light-accent);
   @include colorVar('--c-lightest', $c-lightest);
+
+  // fonts
+
+  --f-main: OpenSans;
+  --f-secondary: Roboto
 }

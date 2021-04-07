@@ -1,0 +1,15 @@
+.menu {
+  font-family: var(--f-main);
+  &__link {
+    margin-right: 1.5625rem;
+    text-transform: uppercase;
+    color: var(--c-dark-coal);
+    text-decoration: none;
+    &:hover {
+      color: var(--c-accent);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
