@@ -1,5 +1,11 @@
 @font-face {
   font-family: OpenSans; 
+  src: url('../fonts/OpenSans/OpenSans-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: OpenSans; 
   src: url('../fonts/OpenSans/OpenSans-SemiBold.woff2');
   font-weight: 600;
 }
@@ -8,4 +14,10 @@
   font-family: OpenSans; 
   src: url('../fonts/OpenSans/OpenSans-Bold.woff2');
   font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto/Roboto-Medium.woff2');
+  font-weight: 500;
 }
