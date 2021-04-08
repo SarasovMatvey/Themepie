@@ -1,0 +1,19 @@
+.btn {
+  position: relative;
+  top: 0;
+  width: 8.125rem;
+  height: 2.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--c-accent);
+  box-shadow: 0 5px 0 var(--c-accent-dark);
+  color: var(--c-lightest);
+  font-size: 0.8125rem;
+  text-decoration: none;
+  transition: .1s;
+  &:active {
+    box-shadow: 0 0 0 var(--c-accent-dark);
+    top: 5px;
+  }
+}

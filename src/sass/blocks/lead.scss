@@ -1,0 +1,34 @@
+.lead {
+  padding: 5.9375rem 0;
+  background: var(--c-light-gray);
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 2.375rem;
+    font-weight: 300;
+    font-size: 1.875rem;
+    letter-spacing: 0.125rem;
+    color: var(--c-dark-coal);
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 1.875rem;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    color: var(--c-dark-light);
+    font-weight: 300;
+  }
+  &__text-link {
+    text-decoration: none;
+    color: var(--c-accent);
+  }
+  &__btn {
+    i {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}
