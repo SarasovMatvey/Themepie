@@ -35,5 +35,8 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^2.0.0",
     "webpack-stream": "^6.1.2"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }
