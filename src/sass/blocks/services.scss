@@ -29,16 +29,16 @@
     background: var(--c-light-gray);
   }
   &__list {
-    --gap: 2.375rem;
-    margin: 0 calc(var(--gap) * -1);
+    --gap: 76px;
+    margin: 0 calc(var(--gap) / 2 * -1);
     padding: 6.5625rem 0 7.8125rem;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
   }
   &__list-item {
-    width: calc(33.333% - var(--gap) * 2);
-    margin: 0 var(--gap);
+    width: calc(33.333% - var(--gap));
+    margin: 0 calc(var(--gap) / 2);
     margin-bottom: 5.3125rem;
     display: flex;
     flex-direction: column;
