@@ -1,0 +1,86 @@
+.services {
+  &__header {
+    position: relative;
+    text-align: center;
+    padding: 3.125rem 0;
+    background: var(--c-accent);
+    color: var(--c-lightest);
+    &:after {
+      $size: 1.4375rem;
+      content: "";
+      position: absolute;
+      width: $size;
+      height: $size;
+      left: 50%;
+      bottom: 0;
+      transform-origin: 50% 50%;
+      transform: rotateZ(45deg) translate(-50%, 50%);
+      transform-origin: 0 100%;
+      background: var(--c-accent);
+    }
+  }
+  &__title {
+    font-size: 1.875rem;
+    letter-spacing: 0.125rem;
+    color: var(--c-lightest);
+    font-weight: 300;
+  }
+  &__list-wrap {
+    background: var(--c-light-gray);
+  }
+  &__list {
+    --gap: 2.375rem;
+    margin: 0 calc(var(--gap) * -1);
+    padding: 6.5625rem 0 7.8125rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  &__list-item {
+    width: calc(33.333% - var(--gap) * 2);
+    margin: 0 var(--gap);
+    margin-bottom: 5.3125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--c-dark-neutral);
+  }
+  &__icon-wrap {
+    width: 4.9375rem;
+    height: 4.9375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0.0625rem solid var(--c-accent);
+    margin-bottom: 1.8125rem;
+    transition: 0.1s;
+  }
+  &__list-item:hover &__icon-wrap {
+    background: var(--c-accent);
+  }
+  &__icon {
+    font-size: 1.25rem;
+    color: var(--c-accent);
+    transition: 0.1s;
+  }
+  &__list-item:hover &__icon {
+    color: var(--c-lightest);
+  }
+  &__list-item-title {
+    margin: 0;
+    margin-bottom: 1.5625rem;
+    letter-spacing: 0.0625rem;
+    font-weight: 600;
+    transition: 0.1s;
+  }
+  &__list-item:hover &__list-item-title {
+    color: var(--c-accent);
+  }
+  &__list-item-text {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 300;
+    text-align: center;
+  }
+}

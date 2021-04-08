@@ -38,6 +38,8 @@
   }
   &__features-item {
     position: relative;
+    font-size: 14px;
+    color: var(--c-dark-lighter);
     margin-bottom: 15px;
     &:before {
       content: "\f005";
