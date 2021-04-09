@@ -1,0 +1,15 @@
+.slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__control {
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: var(--c-lightest);
+    cursor: pointer;
+  }
+  &__control-left {
+  }
+}
