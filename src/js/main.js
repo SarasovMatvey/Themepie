@@ -5,3 +5,5 @@
 //=include './_portfolio.js'
 //=include './_interview.js'
 //=include './_members.js'
+//=include './_full-info.js'
+//=include './_reviews.js'
