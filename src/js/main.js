@@ -4,3 +4,4 @@
 //=include './_hero.js'
 //=include './_portfolio.js'
 //=include './_interview.js'
+//=include './_members.js'

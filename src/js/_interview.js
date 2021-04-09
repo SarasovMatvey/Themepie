@@ -1,9 +1,9 @@
 (() => {
-  const swiper = new Swiper(".interview__slider", {
+  const swiper = new Swiper(".interview__slider-container", {
     navigation: {
-      nextEl: ".interview__control-left",
-      prevEl: ".interview__control-right",
-      disabledClass: ".interview__control-disabled",
+      prevEl: ".interview__control-left",
+      nextEl: ".interview__control-right",
+      disabledClass: "interview__control-disabled",
     },
   });
 })();

@@ -74,22 +74,17 @@
     height: 18.75rem;
     &:before {
       content: "";
+      opacity: 0;
       transition: 0.1s;
+    }
+    &:after {
+      content: "";
+      opacity: 0;
+      transition: opacity 0.1s;
     }
   }
   &__card:hover &__card-img-wrap {
     &:before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 99px;
-      height: 99px;
-      background: url("../img/icons/plus.svg");
-    }
-    &:after {
       content: "";
       position: absolute;
       z-index: 2;
@@ -98,6 +93,19 @@
       width: 100%;
       height: 100%;
       background: rgba(var(--c-accent-rgb), 0.2);
+      opacity: 1;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 99px;
+      height: 99px;
+      background: url("../img/icons/plus.svg");
+      opacity: 1;
     }
   }
   &__card-img {

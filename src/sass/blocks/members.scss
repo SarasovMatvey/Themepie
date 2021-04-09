@@ -1,0 +1,105 @@
+.members {
+  &__preview {
+    text-align: center;
+    padding: 6.25rem 3.4375rem;
+    background: var(--c-light-accent);
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 0.625rem;
+    font-size: 1.875rem;
+    letter-spacing: 0.125rem;
+    color: var(--c-dark-coal);
+    font-weight: 300;
+  }
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 11.5625rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0.0625rem;
+    color: var(--c-dark-lighter);
+    font-weight: 300;
+  }
+  &__slider {
+    margin: 0 -40px;
+    margin-top: -120px;
+  }
+  &__slider-container {
+    width: 100%;
+  }
+  &__card {
+    padding-top: 120px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__img-wrap {
+    position: relative;
+    height: 270px;
+    background: var(--c-dark-green);
+    transition: 0.1s;
+  }
+  &__card:hover &__img-wrap {
+    background: var(--c-accent);
+  }
+  &__member-img {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+  &__member-info {
+    position: relative;
+    height: 65px;
+    background: var(--c-lightest);
+  }
+  &__base-info {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+  }
+  &__card:hover &__base-info {
+    top: -100%;
+    transform: translate(-50%, -50%);
+  }
+  &__name {
+    margin: 0;
+    letter-spacing: 1px;
+    color: var(--c-accent);
+    font-weight: 400;
+  }
+  &__post {
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: var(--c-dark-neutral);
+    font-weight: 300;
+  }
+  &__socials {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%);
+    transition: 0.1s;
+  }
+  &__card:hover &__socials {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__control {
+    margin-top: 120px;
+    color: var(--c-accent) !important;
+  }
+  &__control-disabled {
+    color: var(--c-dark-light) !important;
+  }
+  &__control-left {
+    margin-right: 30px;
+  }
+  &__control-right {
+    margin-left: 30px;
+  }
+}
