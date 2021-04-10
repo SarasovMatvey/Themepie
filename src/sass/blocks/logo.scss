@@ -1,6 +1,10 @@
 .logo {
   width: 6.875rem;
   &__img {
-    max-width: 100%;
+    width: 100%;
   }
+}
+
+.logo_large {
+  width: 14.25rem;
 }
