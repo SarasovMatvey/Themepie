@@ -26,6 +26,9 @@
   &__slider {
     margin-bottom: 6.5625rem;
   }
+  &__slide {
+    padding: 14px 0;
+  }
   &__slide-img-wrap {
     position: relative;
     cursor: pointer;
@@ -40,7 +43,7 @@
     }
   }
   &__slide-img-wrap_active {
-    box-shadow: 8.387px 5.446px 12.5px rgba(var(--c-black-rgb), 0.75);
+    box-shadow: 8.387px 5.446px 12.5px rgba(var(--c-black-rgb), 0.9);
     &:after {
       background: none;
     }

@@ -7,3 +7,4 @@
 //=include './_members.js'
 //=include './_full-info.js'
 //=include './_reviews.js'
+//=include './_blog-info.js'

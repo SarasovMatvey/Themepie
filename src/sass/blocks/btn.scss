@@ -7,14 +7,30 @@
   justify-content: center;
   align-items: center;
   background: var(--c-accent);
-  box-shadow: 0 5px 0 var(--c-accent-dark);
+  box-shadow: 0 5px 0 var(--c-accent-darker);
   color: var(--c-lightest);
   font-size: 0.8125rem;
   text-decoration: none;
   cursor: pointer;
-  transition: .1s;
+  transition: 0.1s;
   &:active {
-    box-shadow: 0 0 0 var(--c-accent-dark);
+    box-shadow: 0 0 0 var(--c-accent-darker);
     top: 5px;
+  }
+}
+
+.btn_red {
+  background: var(--c-accent-red);
+  box-shadow: 0 5px 0 var(--c-accent-red-darker);
+  &:active {
+    box-shadow: 0 0 0 var(--c-accent-red-darker);
+  }
+}
+
+.btn_green {
+  background: var(--c-accent-green);
+  box-shadow: 0 5px 0 var(--c-accent-green-darker);
+  &:active {
+    box-shadow: 0 0 0 var(--c-accent-green-darker);
   }
 }

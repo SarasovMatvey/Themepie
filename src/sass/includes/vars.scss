@@ -1,14 +1,14 @@
 :root {
   // colors
   $c-accent: #2888e2;
-  $c-accent-dark: #1565af;
-  $c-accent-darker: #184c7dbf;
+  $c-accent-dark: #1b76cc;
+  $c-accent-darker: #145796;
   $c-accent-red: #f5617d;
   $c-accent-red-dark: #ea5974;
   $c-accent-red-darker: #d0425d;
   $c-accent-green: #74c8b8;
-  $c-accent-green-darker: #5cb1a1;
-  $c-accent-green-darkest: #509a8c;
+  $c-accent-green-dark: #5cb1a1;
+  $c-accent-green-darker: #509a8c;
   $c-black: #000000;
   $c-darkest: #202020;
   $c-darker: #2e2e2e;
@@ -29,8 +29,8 @@
   @include colorVar("--c-accent-red-dark", $c-accent-red-dark);
   @include colorVar("--c-accent-red-darker", $c-accent-red-darker);
   @include colorVar("--c-accent-green", $c-accent-green);
+  @include colorVar("--c-accent-green-dark", $c-accent-green-dark);
   @include colorVar("--c-accent-green-darker", $c-accent-green-darker);
-  @include colorVar("--c-accent-green-darkest", $c-accent-green-darkest);
   @include colorVar("--c-black", $c-black);
   @include colorVar("--c-darkest", $c-darkest);
   @include colorVar("--c-darker", $c-darker);
