@@ -141,5 +141,10 @@
     text-transform: capitalize;
     text-decoration: none;
     display: inline-block;
+    transition: 0.1s;
+    &:hover {
+      background: var(--c-accent);
+      color: var(--c-lightest);
+    }
   }
 }

@@ -35,5 +35,8 @@
     position: absolute;
     bottom: 0;
     left: 50%;
+    .section-slider__pagination-bullet {
+      cursor: pointer;
+    }
   }
 }

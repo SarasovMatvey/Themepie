@@ -1,0 +1,22 @@
+.footer-bottom {
+  padding: 25px 0;
+  background: var(--c-darker);
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__menu {
+    .menu__link {
+      color: var(--c-dark-neutral);
+    }
+  }
+  &__copy {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--c-dark-neutral);
+    font-weight: 300;
+  }
+  &__copy-name {
+    color: var(--c-lightest);
+  }
+}

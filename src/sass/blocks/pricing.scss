@@ -23,6 +23,11 @@
     font-weight: 400;
     text-decoration: none;
     color: var(--c-lightest);
+    transition: 0.1s;
+    &:hover {
+      background: var(--c-lightest);
+      color: var(--c-accent);
+    }
   }
   &__body {
     text-align: center;
@@ -32,7 +37,6 @@
       max-width: 980px;
     }
   }
-
   &__title {
     margin: 0;
     margin-bottom: 5px;
@@ -129,6 +133,9 @@
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
     background: var(--c-lightest);
+  }
+  &__card_pop &__card-body {
+    border: 1px solid var(--c-accent);
   }
   &__card-features {
     margin-bottom: 60px;
