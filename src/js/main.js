@@ -8,3 +8,4 @@
 //=include './_full-info.js'
 //=include './_reviews.js'
 //=include './_blog-info.js'
+//=include './_header.js'

@@ -31,6 +31,7 @@
     "gulp-inject": "^5.0.5",
     "gulp-jsdoc3": "^3.0.0",
     "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^2.0.0",

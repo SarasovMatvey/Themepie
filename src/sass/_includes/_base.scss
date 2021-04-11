@@ -1,0 +1,13 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: var(--f-main);
+  overflow-x: hidden;
+  min-width: 21.25rem;
+}

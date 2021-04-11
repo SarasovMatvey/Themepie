@@ -1,0 +1,98 @@
+.full-info {
+  padding: 6.5625rem 0;
+  background: var(--c-accent);
+  color: var(--c-lightest);
+  .container {
+    display: flex;
+    max-width: 55rem;
+    justify-content: space-between;
+    @include media(680px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__text-info {
+    margin-right: 1.25rem;
+    @include media(680px) {
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+  &__name {
+    margin: 0;
+    margin-bottom: 0.3125rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.0625rem;
+    font-weight: 400;
+  }
+  &__post {
+    margin: 0;
+    margin-bottom: 1.875rem;
+    letter-spacing: 0.0625rem;
+    color: #e2e2e2;
+    font-weight: 400;
+  }
+  &__text {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    color: var(--c-light-gray);
+    font-weight: 400;
+    max-width: 22.5rem;
+  }
+  &__skills {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include media(680px) {
+      width: 100%;
+      max-width: 380px;
+    }
+  }
+  &__skill {
+    margin-bottom: 0.625rem;
+  }
+  &__skill-title {
+    margin: 0;
+    margin-bottom: 0.625rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0.125rem;
+    font-weight: 300;
+  }
+  &__skill-progressbar {
+    position: relative;
+    width: 19.375rem;
+    height: 0.4375rem;
+    background: var(--c-accent-darker);
+    border-radius: 0.125rem;
+    @include media(680px) {
+      width: 100%;
+    }
+  }
+  &__pb-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(--c-lightest);
+    border-radius: 0.125rem;
+  }
+  &__pb-fill-bubble {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    z-index: 0;
+    left: 100%;
+    transform: translateX(-10px);
+    top: -45px;
+    font-size: 0.75rem;
+    letter-spacing: 0.0625rem;
+    color: var(--c-dark-coal);
+    font-weight: 300;
+    font-family: var(--f-secondary);
+    background: url("../img/icons/mind-bubble.svg") 90% 65% / contain no-repeat;
+  }
+}

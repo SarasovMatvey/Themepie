@@ -1,0 +1,33 @@
+.footer-bottom {
+  padding: 1.5625rem 0;
+  background: var(--c-darker);
+  .container {
+    display: flex;
+    justify-content: space-between;
+    @include media(51.25rem) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__menu {
+    @include media(51.25rem) {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .menu__link {
+      color: var(--c-dark-neutral);
+      @include media(51.25rem) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  &__copy {
+    font-size: 0.8125rem;
+    letter-spacing: 0.0625rem;
+    color: var(--c-dark-neutral);
+    font-weight: 300;
+  }
+  &__copy-name {
+    color: var(--c-lightest);
+  }
+}

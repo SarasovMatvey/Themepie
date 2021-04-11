@@ -1,0 +1,201 @@
+.pricing {
+  &__header {
+    padding: 2.8125rem 0;
+    color: var(--c-lightest);
+    background: var(--c-accent);
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include media(45rem) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  }
+  &__header-title {
+    margin: 0;
+    margin-right: 3rem;
+    font-size: 1.875rem;
+    letter-spacing: 0.0625rem;
+    font-weight: 300;
+    @include media(45rem) {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__header-btn {
+    padding: 0.75rem 1.5625rem;
+    border: 0.0625rem solid var(--c-lightest);
+    text-transform: uppercase;
+    letter-spacing: 0rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--c-lightest);
+    transition: 0.1s;
+    white-space: nowrap;
+    &:hover {
+      background: var(--c-lightest);
+      color: var(--c-accent);
+    }
+  }
+  &__body {
+    text-align: center;
+    padding: 6.5625rem 0;
+    background: var(--c-light-gray);
+    .container {
+      max-width: 61.25rem;
+    }
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 0.3125rem;
+    font-size: 1.875rem;
+    letter-spacing: 0.125rem;
+    color: var(--c-dark-coal);
+    font-weight: 300;
+  }
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 6.875rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0.0625rem;
+    color: var(--c-dark-lighter);
+    font-weight: 300;
+    font-family: var(--f-secondary);
+  }
+  &__cards {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 0.9375rem;
+    @include media(52.5rem) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+    @include media(37.5rem) {
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
+    }
+  }
+  &__card {
+    width: 100%;
+    max-width: 19.125rem;
+    border-radius: 0.4375rem;
+    overflow: hidden;
+    text-align: center;
+    &:nth-child(2) {
+      @include media(37.5rem) {
+        order: -1;
+      }
+    }
+  }
+  &__card_pop {
+    margin-top: -2.375rem;
+  }
+  &__card-pop {
+    height: 2.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--c-lightest);
+    border: 0.0625rem solid var(--c-accent);
+    border-radius: 0.4375rem 0.4375rem 0 0;
+    font-size: 0.9375rem;
+    letter-spacing: 0.0625rem;
+    color: var(--c-accent);
+    font-weight: 300;
+  }
+  &__card-title {
+    margin: 0;
+    padding: 1.25rem 0;
+    background: var(--c-accent-dark);
+    border-bottom: 0.0625rem solid var(--c-accent-darker);
+    color: var(--c-lightest);
+    font-size: 0.9375rem;
+    letter-spacing: 0.0625rem;
+    font-weight: 300;
+  }
+  &__card_red &__card-title {
+    background: var(--c-accent-red-dark);
+    border-bottom: 0.0625rem solid var(--c-accent-red-darker);
+  }
+  &__card_green &__card-title {
+    background: var(--c-accent-green-dark);
+    border-bottom: 0.0625rem solid var(--c-accent-green-darker);
+  }
+  &__card-price {
+    margin: 0;
+    color: var(--c-lightest);
+    padding: 1.25rem 0 1.875rem;
+    background: var(--c-accent);
+    font-size: 0.75rem;
+    font-weight: 250;
+    font-family: var(--f-secondary);
+  }
+  &__card_red &__card-price {
+    background: var(--c-accent-red);
+  }
+  &__card_green &__card-price {
+    background: var(--c-accent-green);
+  }
+  &__card-price-number {
+    font-size: 3.125rem;
+    letter-spacing: 0.1875rem;
+    &:before {
+      content: "$";
+      font-family: var(--f-secondary);
+      position: relative;
+      bottom: 1.875rem;
+      font-size: 0.75rem;
+    }
+  }
+  &__card-body {
+    padding: 1.25rem 1.25rem 2.1875rem;
+    border: 0.0625rem solid rgba(var(--c-black-rgb), 0.2);
+    border-bottom-left-radius: 0.4375rem;
+    border-bottom-right-radius: 0.4375rem;
+    background: var(--c-lightest);
+  }
+  &__card_pop &__card-body {
+    border: 0.0625rem solid var(--c-accent);
+  }
+  &__card-features {
+    margin-bottom: 3.75rem;
+  }
+  &__card-features-title {
+    margin: 0;
+    margin-bottom: 1.25rem;
+    font-size: 1.0625rem;
+    letter-spacing: 0.0625rem;
+    color: var(--c-dark-coal);
+    font-weight: 400;
+  }
+  &__card-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__card-features-list-item {
+    padding: 0.1875rem 0 0.9375rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.0625rem;
+    color: var(--c-dark-neutral);
+    font-weight: 300;
+    &:nth-child(even) {
+      border-radius: 0.125rem;
+      box-shadow: 0.0524375rem 0.0340625rem 0.03125rem rgba(var(--c-black-rgb), 0.15);
+      background-color: var(--c-light-accent);
+    }
+  }
+  &__card-btn {
+    width: 100%;
+    border-radius: 0.125rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.0625rem;
+    font-weight: 300;
+  }
+}

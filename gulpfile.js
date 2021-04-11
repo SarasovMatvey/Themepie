@@ -13,6 +13,7 @@ const gulpif = require("gulp-if");
 const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCss = require("gulp-clean-css");
+const sassGlob = require("gulp-sass-glob");
 
 // SCRIPTS
 const uglify = require("gulp-uglify-es").default;
@@ -72,10 +73,11 @@ function html() {
 }
 
 function styles() {
-  return src(paths.styles)
+  return src([paths.styles, "!_*.scss"])
     .pipe(gulpif(config.isDevelopment, sourcemaps.init()))
-    .pipe(concat(names.outputCssFile))
+    .pipe(sassGlob())
     .pipe(sass())
+    .pipe(concat(names.outputCssFile))
     .pipe(
       cleanCss({
         level: 2,
